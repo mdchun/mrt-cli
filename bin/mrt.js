@@ -16,29 +16,29 @@ program
     }
   });
 
-// program
-//   .command("build")
-//   .alias("b")
-//   .action(_ => {
-//     try {
-//       require("../scripts/build");
-//     } catch (e) {
-//       logger.error(e.message || e);
-//       process.exit(1);
-//     }
-//   });
+program
+  .command("build")
+  .alias("b")
+  .action(_ => {
+    try {
+      require("../scripts/build");
+    } catch (e) {
+      logger.error(e.message || e);
+      process.exit(1);
+    }
+  });
 
-// program
-//   .command("start")
-//   .alias("s")
-//   .action(_ => {
-//     try {
-//       require("../scripts/start");
-//     } catch (e) {
-//       logger.error(e.message || e);
-//       process.exit(1);
-//     }
-//   });
+program
+  .command("start")
+  .alias("s")
+  .action(_ => {
+    try {
+      require("../scripts/start");
+    } catch (e) {
+      logger.error(e.message || e);
+      process.exit(1);
+    }
+  });
 
 program.parse(process.argv);
 
