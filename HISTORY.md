@@ -1,5 +1,9 @@
 # mrt-cli - History
 
+## version 0.0.3
+
+- 更新依赖，测试
+
 ## version 0.0.2
 
 - 添加 mrt start | mrt build
